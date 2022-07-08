@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 ">
+                <div class="mycard">
+                    <div class="options MaterialOPtions ">
+                        <h4>Shaft Material?</h4>
+                        <div class="form-check">
+                            <input class="form-check-input " type="radio" name="GraphiteBTN" value="Graphite" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Graphite
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input " type="radio" name="GraphiteBTN" id="flexRadioDefault2" value="STEEL" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Steel
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="options MaterialOPtions ">
+                        <h4>Swing Speed</h4>
+                        <input type="range" class="form-range" min="40" max="110" value="85" step="5" id="swing_speed" oninput="this.nextElementSibling.value = this.value">
+                        <output>85</output>
+                    </div>
+                    
+                    <div class="options">
+                        <h4>Tempo</h4>     
+                        <input type="range" class="form-range" min="0" max="5" value="5" step="2.5" id="Tempo">
+                          <div class="row mt-1">
+                            <div class="col-4 ">
+                            Smooth
+                            </div>
+                            <div class="col-4 text-center">
+                            Moderate
+                            </div>
+                            <div class="col-4 text-end">
+                            Quick
+                            </div>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <h4> Release </h4>
+                        <input type="range" class="form-range" min="0" value="0" max="5" step="2.5" id="releseRange">
+                         <div class="row mt-1">
+                            <div class="col-4 ">
+                            Early
+                            </div>
+                            <div class="col-4 text-center">
+                            Mid
+                            </div>
+                            <div class="col-4 text-end">
+                            Late
+                            </div>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <h4>Desired Trajectory</h4>
+                        <input type="range" class="form-range" min="0" value="2.5" max="5" step="2.5" id="trajectory">
+                         <div class="row mt-1">
+                            <div class="col-4 ">
+                            Low
+                            </div>
+                            <div class="col-4 text-center">
+                            Mid
+                            </div>
+                            <div class="col-4 text-end">
+                            High
+                            </div>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <h4>Desired Spin</h4>
+                        <input type="range" class="form-range" min="0" value="5" max="5" step="2.5" id="spin">
+                         <div class="row mt-1">
+                            <div class="col-4 ">
+                            Low
+                            </div>
+                            <div class="col-4 text-center">
+                            Mid
+                            </div>
+                            <div class="col-4 text-end">
+                            High
+                            </div>
+                        </div>
+                    </div>
+                    <div class="options">   
+                        <h4>Distance or Control? </h4>
+                        <input type="range" class="form-range" min="0" value="2.5" max="5" step="2.5" id="distanceControl">
+                         <div class="row mt-1">
+                            <div class="col-4 ">
+                            Control
+                            </div>
+                            <div class="col-4 text-center">
+                            Balance
+                            </div>
+                            <div class="col-4 text-end">
+                            Distance
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="options">
+                    <h4> Weight </h4>
+                        <input type="range" class="form-range" min="0" value="7.5" max="10" step="2.5" id="weight">
+                         <div class="row  mt-1">
+                            <div class="alignNext ">
+                            U-Lite
+                            </div>
+                            <div class="alignNext ">
+                            Lite
+                            </div>
+                            <div class="alignNext text-center">
+                            Mid
+                            </div>
+                            <div class="alignNext text-end">
+                            Heavy
+                            </div>
+                            <div class="alignNext text-end">
+                            Tour
+                            </div>
+                        </div>  
+                    </div>
+                   
+                  
+                </div>
+            </div>
+             <div class="col-8">
+                <div class="mycard">
+                     <h1 class="mb-3">Top Results:</h1>
+
+                     <div class="myResults row">
+
+                     
+                     
+                     </div>
+                 </div>
+            </div>
+         
+        </div>
+    </div>
+    
+    <footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="./variables.js"></script> 
+    <script type="text/javascript" src="./index.js"></script>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,82 @@
+body {
+  background-color: #fafafa;
+  padding: 20px;
+}
+
+.mycard {
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.11);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.11);
+  padding: 20px;
+}
+
+.options {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #dadada;
+  margin-bottom: 20px;
+}
+h4 {
+  margin-bottom: 30px;
+}
+
+.alignNext {
+  display: inline;
+  width: 20%;
+}
+
+.resultTitle {
+  margin-bottom: 5px;
+}
+.items {
+  background-color: rgb(241, 241, 241);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.categroy {
+  padding: 10px;
+
+  margin-bottom: 10px;
+  border-bottom: 0.5px solid #dadada;
+}
+
+.catName {
+  font-size: 10px !important;
+  margin-bottom: 0px;
+}
+
+.green {
+  background-color: rgba(172, 255, 47, 0.282);
+}
+
+.green::after {
+  content: "+10";
+  float: right;
+  margin-top: -20px;
+}
+
+.p-total {
+  text-align: right;
+  margin-top: 20px;
+}
+output {
+  text-align: right;
+  float: right;
+}
+
+.no-results {
+  background-color: rgb(241, 241, 241);
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 20px;
+  height: 500px;
+}
+
+.parent {
+  display: flex;
+}
+.child {
+  margin: auto;
+}
